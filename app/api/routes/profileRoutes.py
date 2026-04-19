@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse
 from typing import Optional
 import logging
 
-from app.data.respository.profileDatabase import get_profiles, delete_profile, get_profile_by_id
+from app.data.repository.profileDatabase import get_profiles, delete_profile, get_profile_by_id
 from app.schemas.Requests.ProfileRequests import CreateProfileRequest
 from app.schemas.Responses.ProfileResponses import CreateProfileResponse, ProfileDataResponse, ListProfilesResponse, \
     GetProfileResponse, ProfileListItemResponse

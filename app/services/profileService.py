@@ -11,7 +11,7 @@ from app.api.externalApis.agifyApi import AgifyAPI
 from app.api.externalApis.genederizeApi import GenderizeAPI
 from app.api.externalApis.nationalizeApi import NationalizeAPI
 from app.data.models.profileDetails import CreateProfileInput, Profile
-from app.data.respository.profileDatabase import get_profile_by_name, create_profile
+from app.data.repository.profileDatabase import get_profile_by_name, create_profile
 from app.schemas.Responses.ProfileResponses import AgeGroup
 from app.utils.classifyGroups import ProfileConverter
 from config import AGE_BOUNDARIES

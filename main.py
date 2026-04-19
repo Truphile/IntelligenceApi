@@ -5,7 +5,7 @@ from contextlib import asynccontextmanager
 import os
 import logging
 from app.api.routes import profileRoutes
-from app.data.respository.profileDatabase import init_db, close_db
+from app.data.repository.profileDatabase import init_db, close_db
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

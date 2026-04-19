@@ -22,6 +22,8 @@ engine = create_engine(
     pool_pre_ping=True
 )
 
+print(f"DEBUG: DATABASE_URL value is: {DATABASE_URL}")
+
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
