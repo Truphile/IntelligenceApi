@@ -9,8 +9,7 @@ ENVIRONMENT = os.getenv("ENVIRONMENT", "production")
 DEBUG = ENVIRONMENT == "development"
 
 DATABASE_URL = os.getenv(
-    "DATABASE_URL",
-    "postgresql+psycopg://user:password@localhost:5432/profile_service"
+    "DATABASE_URL"
 )
 DATABASE_POOL_SIZE = int(os.getenv("DATABASE_POOL_SIZE", 10))
 DATABASE_MAX_OVERFLOW = int(os.getenv("DATABASE_MAX_OVERFLOW", 20))
